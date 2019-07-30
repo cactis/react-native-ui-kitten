@@ -26,6 +26,7 @@ import {
   ModalContainer,
   SpinnerContainer,
   IconContainer,
+  DropdownContainer,
 } from '../ui/screen';
 
 export interface RouteType {
@@ -40,6 +41,7 @@ const AppNavigator = createStackNavigator({
   ['Button Group']: ButtonGroupContainer,
   ['Checkbox']: CheckBoxContainer,
   ['Icon']: IconContainer,
+  ['Dropdown']: DropdownContainer,
   ['Input']: InputContainer,
   ['Layout']: LayoutContainer,
   ['List']: ListContainer,
@@ -56,7 +58,7 @@ const AppNavigator = createStackNavigator({
   ['Sample']: SampleContainer,
   ['Modal']: ModalContainer,
 }, {
-  initialRouteName: 'Home',
+  initialRouteName: 'Dropdown',
   headerMode: 'screen',
 });
 
