@@ -1,26 +1,34 @@
 {
   "expo": {
-    "name": "react-native-ui-kitten-playground",
-    "description": "react-native-ui-kitten-playground",
-    "slug": "playground",
+    "name": "UI Kitten Playground",
+    "icon": "./assets/brand-logo.png",
+    "version": "4.1.0",
+    "description": "ui-kitten-playground",
+    "slug": "ui-kitten-playground",
     "sdkVersion": "33.0.0",
+    "privacy": "public",
+    "orientation": "portrait",
     "platforms": [
       "android",
       "ios",
       "web"
     ],
-    "version": "1.0.0",
-    "orientation": "portrait",
     "packagerOpts": {
       "config": "./metro.config.js"
     },
-    "androidStatusBarColor": "#3366FF",
-    "androidStatusBar": {
-      "barStyle": "light-content",
-      "backgroundColor": "#3366FF"
-    },
     "assetBundlePatterns": [
-      "./assets"
-    ]
+      "assets/*"
+    ],
+    "androidStatusBar": {
+      "backgroundColor": "#FFFFFF"
+    },
+    "android": {
+      "package": "com.akveo.kittenTricks",
+      "versionCode": 1
+    },
+    "ios": {
+      "bundleIdentifier": "com.akveo.kittentricks"
+    },
+    "githubUrl": "https://github.com/akveo/react-native-ui-kitten"
   }
 }
