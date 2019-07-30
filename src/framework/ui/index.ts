@@ -43,11 +43,22 @@ export {
   IconProvider,
   Icons,
 } from './icon/service/type';
-import {
+export {
   Dropdown,
   DropdownProps,
 } from './dropdown/dropdown.component';
 export { DropdownItemType } from './dropdown/droppdownItem.component';
+export {
+  Drawer,
+  DrawerProps,
+  DrawerElement,
+  DrawerHeaderElement,
+} from './drawer/drawer.component';
+export {
+  DrawerItem,
+  DrawerItemProps,
+  DrawerItemElement,
+} from './drawer/drawerItem.component';
 export {
   Input,
   InputProps,

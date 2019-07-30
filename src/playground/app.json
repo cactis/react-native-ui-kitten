@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "UI Kitten Playground",
-    "icon": "./assets/brand-logo.png",
+    "icon": "./src/assets/brand-logo.png",
     "version": "4.1.0",
     "description": "ui-kitten-playground",
     "slug": "ui-kitten-playground",

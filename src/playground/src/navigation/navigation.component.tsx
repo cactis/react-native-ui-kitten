@@ -1,39 +1,43 @@
 import React from 'react';
 import {
   createAppContainer,
+  createDrawerNavigator,
   createStackNavigator,
+  NavigationRouteConfigMap,
 } from 'react-navigation';
 import {
-  Home,
+  AvatarContainer,
+  BottomNavigationContainer,
   ButtonContainer,
   ButtonGroupContainer,
-  AvatarContainer,
-  InputContainer,
   CheckBoxContainer,
-  ToggleContainer,
-  RadioContainer,
-  TextContainer,
-  ListContainer,
-  PopoverContainer,
-  TooltipContainer,
-  OverflowMenuContainer,
-  BottomNavigationContainer,
-  TabViewContainer,
-  TopNavigationContainer,
-  RadioGroupContainer,
+  DrawerContainer,
+  Home,
+  InputContainer,
   LayoutContainer,
+  ListContainer,
+  OverflowMenuContainer,
+  PopoverContainer,
+  RadioContainer,
+  RadioGroupContainer,
   SampleContainer,
   ModalContainer,
   SpinnerContainer,
   IconContainer,
   DropdownContainer,
+  TabViewContainer,
+  TextContainer,
+  ToggleContainer,
+  TooltipContainer,
+  TopNavigationContainer,
 } from '../ui/screen';
+import { DrawerNavigation } from './drawerNavigation.component';
 
 export interface RouteType {
   name: string;
 }
 
-const AppNavigator = createStackNavigator({
+const routes: NavigationRouteConfigMap = {
   ['Home']: Home,
   ['Avatar']: AvatarContainer,
   ['Bottom Navigation']: BottomNavigationContainer,
@@ -42,9 +46,11 @@ const AppNavigator = createStackNavigator({
   ['Checkbox']: CheckBoxContainer,
   ['Icon']: IconContainer,
   ['Dropdown']: DropdownContainer,
+  ['Drawer']: DrawerContainer,
   ['Input']: InputContainer,
   ['Layout']: LayoutContainer,
   ['List']: ListContainer,
+  ['Modal']: ModalContainer,
   ['Popover']: PopoverContainer,
   ['Radio']: RadioContainer,
   ['Radio Group']: RadioGroupContainer,
@@ -56,10 +62,21 @@ const AppNavigator = createStackNavigator({
   ['Top Navigation']: TopNavigationContainer,
   ['Overflow Menu']: OverflowMenuContainer,
   ['Sample']: SampleContainer,
-  ['Modal']: ModalContainer,
 }, {
-  initialRouteName: 'Dropdown',
+  initialRouteName: 'Home',
+};
+
+const MenuNavigator = createStackNavigator(routes, {
+  initialRouteName: 'Home',
   headerMode: 'screen',
 });
 
-export const Router: any = createAppContainer(AppNavigator);
+const DrawerNavigator = createDrawerNavigator({
+  ...routes,
+  ['Home']: MenuNavigator,
+}, {
+  contentComponent: DrawerNavigation,
+  initialRouteName: 'Home',
+});
+
+export const Router: any = createAppContainer(DrawerNavigator);

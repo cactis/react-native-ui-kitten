@@ -22,6 +22,7 @@ export const routes: RouteType[] = [
   { name: 'Checkbox' },
   { name: 'Icon' },
   { name: 'Dropdown' },
+  { name: 'Drawer' },
   { name: 'Input' },
   { name: 'Layout' },
   { name: 'List' },
