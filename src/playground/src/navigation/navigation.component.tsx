@@ -21,6 +21,7 @@ import {
   RadioContainer,
   RadioGroupContainer,
   SampleContainer,
+  CalendarContainer,
   ModalContainer,
   SpinnerContainer,
   IconContainer,
@@ -43,6 +44,7 @@ const routes: NavigationRouteConfigMap = {
   ['Bottom Navigation']: BottomNavigationContainer,
   ['Button']: ButtonContainer,
   ['Button Group']: ButtonGroupContainer,
+  ['Calendar']: CalendarContainer,
   ['Checkbox']: CheckBoxContainer,
   ['Icon']: IconContainer,
   ['Dropdown']: DropdownContainer,
@@ -62,8 +64,6 @@ const routes: NavigationRouteConfigMap = {
   ['Top Navigation']: TopNavigationContainer,
   ['Overflow Menu']: OverflowMenuContainer,
   ['Sample']: SampleContainer,
-}, {
-  initialRouteName: 'Home',
 };
 
 const MenuNavigator = createStackNavigator(routes, {

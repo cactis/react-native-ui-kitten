@@ -368,6 +368,20 @@ export const structure = [
       },
       {
         type: 'tabs',
+        name: 'Calendar',
+        icon: 'styled.svg',
+        source: [
+          'Calendar',
+        ],
+        overview: [
+          {
+            name: 'Calendar',
+            images: ['calendar.png'],
+          },
+        ],
+      },
+      {
+        type: 'tabs',
         name: 'Radio',
         icon: 'radio.svg',
         source: [

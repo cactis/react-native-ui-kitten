@@ -16,6 +16,8 @@ const moduleFolders = [
   path.resolve(__dirname, '../framework'),
   path.resolve(__dirname, '../framework/theme'),
   path.resolve(__dirname, '../framework/ui'),
+  path.resolve(Config.MODULES_PATH, 'moment'),
+  path.resolve(Config.MODULES_PATH, 'date-fns'),
   path.resolve(__dirname, '../eva-icons'),
 ];
 
@@ -24,9 +26,12 @@ const moduleFolders = [
  */
 const rootDependencyFolders = [
   path.resolve(__dirname, '../../node_modules/@babel'),
+  path.resolve(__dirname, '../../node_modules/fecha'),
   path.resolve(__dirname, '../../node_modules/hoist-non-react-statics'),
   path.resolve(__dirname, '../../node_modules/react-is'),
   path.resolve(__dirname, '../../node_modules/lodash.merge'),
+  path.resolve(__dirname, '../../node_modules/moment'),
+  path.resolve(__dirname, '../../node_modules/date-fns'),
   path.resolve(__dirname, '../../node_modules/react-native-eva-icons'),
   path.resolve(__dirname, '../../node_modules/react-native-svg'),
 ];

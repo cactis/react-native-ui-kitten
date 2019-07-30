@@ -9,6 +9,8 @@ const moduleAliases = {
   'react-native-ui-kitten': path.resolve(__dirname, '../framework'),
   '@kitten/theme': path.resolve(__dirname, '../framework/theme'),
   '@kitten/ui': path.resolve(__dirname, '../framework/ui'),
+  '@ui-kitten/moment': path.resolve(Config.MODULES_PATH, 'moment'),
+  '@ui-kitten/date-fns': path.resolve(Config.MODULES_PATH, 'date-fns'),
   '@ui-kitten/eva-icons': path.resolve(__dirname, '../eva-icons'),
 };
 

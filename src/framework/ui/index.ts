@@ -24,6 +24,15 @@ export {
   ButtonGroupElement,
 } from './buttonGroup/buttonGroup.component';
 export {
+  Calendar,
+  CalendarProps,
+  CalendarElement,
+} from './calendar/calendar.component';
+export {
+  CalendarViewMode,
+  CalendarViewModes,
+} from './calendar/type';
+export {
   CheckBox,
   CheckBoxProps,
   CheckBoxElement,
@@ -160,3 +169,6 @@ export {
   ViewPagerProps,
   ViewPagerElement,
 } from './viewPager/viewPager.component';
+export { DateService } from './calendar/service/date.service';
+export { NativeDateService } from './calendar/service/nativeDate.service';
+export { TranslationWidth, I18nConfig } from './calendar/i18n/type';

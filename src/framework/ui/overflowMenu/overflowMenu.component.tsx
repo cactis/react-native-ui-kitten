@@ -26,10 +26,7 @@ import {
   Popover,
   PopoverProps,
 } from '../popover/popover.component';
-import {
-  ModalPresentingBased,
-  Omit,
-} from '../support/typings';
+import { ModalPresentingBased } from '../support/typings';
 
 type PopoverContentProps = Omit<PopoverProps, 'content'>;
 

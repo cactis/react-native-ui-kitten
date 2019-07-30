@@ -8,14 +8,14 @@ const moduleAliases = {
   'react-native-ui-kitten': path.resolve(__dirname, './src/framework'),
   '@kitten/theme': path.resolve(__dirname, './src/framework'),
   '@kitten/ui': path.resolve(__dirname, './src/framework'),
+  '@ui-kitten/moment': path.resolve('./src/moment'),
+  '@ui-kitten/date-fns': path.resolve('./src/date-fns'),
   '@ui-kitten/eva-icons': path.resolve(__dirname, './src/eva-icons'),
 };
 
 const moduleResolverConfig = {
   root: path.resolve('./'),
-  alias: {
-    ...moduleAliases,
-  },
+  alias: moduleAliases,
 };
 
 module.exports = function(api) {
